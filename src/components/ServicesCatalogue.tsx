@@ -1,19 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
-
-interface Row {
-  scope: string;
-  arynox: string;
-  market: string;
-}
-
-interface Section {
-  num: string;
-  title: string;
-  desc: string;
-  rows: Row[];
-}
+interface Row { scope: string; arynox: string; market: string; }
+interface Section { num: string; title: string; desc: string; rows: Row[]; }
 
 const sections: Section[] = [
   {
@@ -146,78 +132,52 @@ const sections: Section[] = [
 
 export default function ServicesCatalogue() {
   return (
-    <section id="services" className="bg-[#fdfbf7]" style={{ paddingTop: "clamp(40px, 7vw, 90px)", paddingBottom: "clamp(40px, 7vw, 90px)" }}>
-      <div className="container mx-auto px-4 sm:px-5 max-w-[1240px]">
+    <section id="services" className="bg-beige" style={{ paddingTop: "clamp(40px,7vw,90px)", paddingBottom: "clamp(40px,7vw,90px)" }}>
+      <div className="container-main">
         <div className="max-w-[860px] mx-auto text-center mb-7 sm:mb-[clamp(36px,4vw,52px)]">
-          <div className="inline-flex items-center gap-2 text-[#b8860b] text-[11px] sm:text-xs font-extrabold tracking-[.15em] sm:tracking-[.18em] uppercase mb-3 sm:mb-[18px]">
-            <span className="inline-block w-[24px] sm:w-[36px] h-[2px] bg-[#d4af37]" />
-            Complete Catalogue &amp; Direct Price Comparison
-          </div>
-          <h2 className="font-serif text-[clamp(24px,4vw,52px)] leading-[1.12] tracking-[-.01em] sm:tracking-[-.02em] font-bold text-[#0f172a] mb-3 sm:mb-4">
+          <div className="eyebrow" style={{ justifyContent: "center" }}>Complete Catalogue &amp; Direct Price Comparison</div>
+          <h2 className="font-serif text-[clamp(24px,4vw,52px)] leading-[1.12] font-bold text-dark mb-3 sm:mb-4">
             Every Service: Arynoxtech Pricing vs. Market Rates
           </h2>
-          <p className="text-sm sm:text-[clamp(15px,1.2vw,19px)] text-[#475569]">
-            Compare our direct starting rates against prevailing 2026 market pricing across India, Maharashtra, and the
-            Konkan region.
+          <p className="text-sm sm:text-[clamp(15px,1.2vw,19px)] text-muted">
+            Compare our direct starting rates against prevailing 2026 market pricing across India, Maharashtra, and the Konkan region.
           </p>
         </div>
 
         <div className="space-y-5 sm:space-y-8">
-          {sections.map((sec, idx) => (
-            <motion.article
-              key={sec.num}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.04 }}
-              className="bg-white border border-[#e2d9ca] rounded-[12px] sm:rounded-[16px] p-4 sm:p-[clamp(20px,2.8vw,36px)] transition-all duration-300 hover:border-[#d4af37] hover:shadow-lg"
-            >
-              <h3 className="font-serif text-[clamp(17px,2vw,26px)] font-bold text-[#0f172a] mb-1.5 sm:mb-2.5 flex items-center gap-2 sm:gap-3.5 flex-wrap">
+          {sections.map((sec) => (
+            <article key={sec.num} className="bg-white border border-line rounded-[12px] sm:rounded-[16px] p-4 sm:p-[clamp(20px,2.8vw,36px)] transition-all duration-300 hover:border-[#d4af37] hover:shadow-lg">
+              <h3 className="font-serif text-[clamp(17px,2vw,26px)] font-bold text-dark mb-1.5 sm:mb-2.5 flex items-center gap-2 sm:gap-3.5 flex-wrap">
                 <span className="text-[#b8860b] font-semibold text-[clamp(18px,2.2vw,28px)] italic">{sec.num}</span>
                 {sec.title}
               </h3>
               <p className="text-sm sm:text-[clamp(15px,1.2vw,19px)] text-[#334155] mb-0">{sec.desc}</p>
 
-              <div className="mt-3 sm:mt-5 rounded-lg sm:rounded-xl overflow-hidden border border-[#e2d9ca] overflow-x-auto scrollbar-thin">
-                <table className="w-full min-w-[520px] sm:min-w-[580px] border-collapse bg-white text-left">
+              <div className="mt-3 sm:mt-5 rounded-lg sm:rounded-xl overflow-hidden border border-line overflow-x-auto scrollbar-thin">
+                <table className="w-full min-w-[520px] sm:min-w-[580px]">
                   <thead>
                     <tr>
-                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-[#e2d9ca]">
-                        Product / Service Scope
-                      </th>
-                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-[#e2d9ca] text-right whitespace-nowrap">
-                        Arynoxtech
-                      </th>
-                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-[#e2d9ca] text-right whitespace-nowrap">
-                        Market (India / MH)
-                      </th>
+                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-line">Product / Service Scope</th>
+                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-line text-right whitespace-nowrap">Arynoxtech</th>
+                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-line text-right whitespace-nowrap">Market (India / MH)</th>
                     </tr>
                   </thead>
                   <tbody>
                     {sec.rows.map((r, i) => (
                       <tr key={i} className="hover:bg-[#fdfbf7] transition-colors">
                         <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-[12px] sm:text-[15px] text-[#334155]">
-                          {r.scope.split(" \u2014 ").length > 1 ? (
-                            <>
-                              <strong>{r.scope.split(" \u2014 ")[0]}</strong>
-                              <span className="hidden sm:inline"> \u2014 {r.scope.split(" \u2014 ").slice(1).join(" \u2014 ")}</span>
-                            </>
-                          ) : (
-                            r.scope
-                          )}
+                          {r.scope.includes(" \u2014 ") ? (
+                            <><strong>{r.scope.split(" \u2014 ")[0]}</strong><span className="hidden sm:inline"> \u2014 {r.scope.split(" \u2014 ").slice(1).join(" \u2014 ")}</span></>
+                          ) : r.scope}
                         </td>
-                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-right text-[#b8860b] font-extrabold text-[13px] sm:text-[15px] whitespace-nowrap">
-                          {r.arynox}
-                        </td>
-                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-right text-[#475569] font-semibold text-[12px] sm:text-[15px] whitespace-nowrap">
-                          {r.market}
-                        </td>
+                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-right text-[#b8860b] font-extrabold text-[13px] sm:text-[15px] whitespace-nowrap">{r.arynox}</td>
+                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-right text-muted font-semibold text-[12px] sm:text-[15px] whitespace-nowrap">{r.market}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
