@@ -46,13 +46,11 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 mt-6">
             <a
               href="#services"
-              className="inline-flex items-center gap-2 px-7 py-3.5 md:px-8 md:py-4 rounded-full text-sm md:text-base font-extrabold text-white transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 shadow-lg"
+              className="inline-flex items-center gap-2 px-7 py-3.5 md:px-8 md:py-4 rounded-full text-sm md:text-base font-extrabold text-white transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0
+                         hover:shadow-[0_8px_35px_rgba(184,134,11,0.35)] shadow-[0_4px_20px_rgba(184,134,11,0.25)]"
               style={{
                 background: "linear-gradient(135deg, #d4af37, #a67c00)",
-                boxShadow: "0 4px 20px rgba(184,134,11,0.25)",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "0 8px 35px rgba(184,134,11,0.35)")}
-              onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "0 4px 20px rgba(184,134,11,0.25)")}
             >
               Explore Services & Pricing
             </a>
