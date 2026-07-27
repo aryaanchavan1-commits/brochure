@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import clsx from "clsx";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -17,41 +16,44 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const handleClick = () => {
-    setOpen(false);
-  };
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
+  const handleClick = () => setOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-bg/96 backdrop-blur-md border-b border-line">
-      <div className="container mx-auto px-5 max-w-[1240px] flex items-center justify-between min-h-[70px] md:min-h-[86px] gap-5">
-        <a href="#" className="flex items-center gap-3.5 shrink-0 group" aria-label="Arynoxtech Home">
-          <div className="relative w-10 h-10 md:w-[54px] md:h-[54px] rounded-full overflow-hidden border-[2.5px] border-gold-bright shadow-[0_0_0_4px_rgba(212,175,55,0.1)] transition-shadow duration-300 group-hover:shadow-[0_0_0_6px_rgba(212,175,55,0.18)]">
-            <Image src="/arynox_lion_logo.png" alt="Arynoxtech Premium Technology Services Logo" fill className="object-cover" sizes="54px" priority />
+    <header className="sticky top-0 z-50 bg-[#fdfbf7] border-b border-[#e2d9ca] shadow-[0_1px_0_rgba(0,0,0,0.02)]">
+      <div className="container mx-auto px-4 sm:px-5 max-w-[1240px] flex items-center justify-between h-[64px] sm:h-[86px] gap-3 sm:gap-5">
+        <a href="#" className="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group" aria-label="Arynoxtech Home">
+          <div className="relative w-9 h-9 sm:w-[54px] sm:h-[54px] rounded-full overflow-hidden border-[2px] sm:border-[2.5px] border-[#d4af37] shadow-[0_0_0_3px_rgba(212,175,55,0.1)] sm:shadow-[0_0_0_6px_rgba(212,175,55,0.1)]">
+            <Image src="/arynox_lion_logo.png" alt="Arynoxtech" fill className="object-cover" sizes="(max-width: 640px) 36px, 54px" priority />
           </div>
           <div>
-            <div className="font-serif text-lg md:text-[22px] font-extrabold tracking-wide text-ink leading-none">ARYNOXTECH</div>
-            <div className="text-[8px] md:text-[10.5px] text-gold font-extrabold tracking-[.18em] uppercase mt-0.5 md:mt-[3px]">Technology • Design • AI</div>
+            <div className="font-serif text-base sm:text-[22px] font-extrabold tracking-wide text-[#0f172a] leading-none">ARYNOXTECH</div>
+            <div className="text-[7px] sm:text-[10.5px] text-[#b8860b] font-extrabold tracking-[.12em] sm:tracking-[.18em] uppercase mt-[2px]">Technology &bull; Design &bull; AI</div>
           </div>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-7 text-sm font-bold text-muted">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-bold text-[#475569]">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="relative transition-colors duration-200 hover:text-ink after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-gold-bright after:transition-all after:duration-300 after:rounded-sm hover:after:w-full">
+            <a key={l.href} href={l.href} className="relative transition-colors duration-200 hover:text-[#0f172a] after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[#d4af37] after:transition-all after:duration-300 after:rounded-sm hover:after:w-full">
               {l.label}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a href="#contact" className="hidden sm:inline-flex items-center gap-2 px-5 py-3 md:px-7 md:py-3.5 rounded-full bg-ink text-white text-sm font-bold border-2 border-ink transition-all duration-300 hover:bg-transparent hover:text-ink hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <a href="#contact" className="hidden sm:inline-flex items-center gap-2 px-4 sm:px-7 py-2.5 sm:py-3.5 rounded-full bg-[#0f172a] text-white text-xs sm:text-sm font-bold border-2 border-[#0f172a] transition-all duration-300 hover:bg-transparent hover:text-[#0f172a]">
             Get a Quote
           </a>
           <button
-            className="lg:hidden relative z-[101] p-2.5 cursor-pointer"
+            className="lg:hidden relative z-[101] p-2 cursor-pointer touch-manipulation"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Close menu" : "Open menu"}
           >
-            {open ? <X size={24} className="text-ink" /> : <Menu size={24} className="text-ink" />}
+            {open ? <X size={22} className="text-[#0f172a]" /> : <Menu size={22} className="text-[#0f172a]" />}
           </button>
         </div>
       </div>
@@ -63,17 +65,17 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-bg/98 backdrop-blur-xl flex flex-col items-center justify-center gap-8 lg:hidden"
+            className="fixed inset-0 z-40 bg-[#fdfbf7] flex flex-col items-center justify-center gap-6 lg:hidden"
           >
             {links.map((l, i) => (
               <motion.a
                 key={l.href}
                 href={l.href}
                 onClick={handleClick}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.08 }}
-                className="text-xl font-bold text-muted hover:text-ink transition-colors"
+                transition={{ delay: i * 0.06 }}
+                className="text-lg sm:text-xl font-bold text-[#475569] hover:text-[#0f172a] transition-colors px-8 py-2"
               >
                 {l.label}
               </motion.a>
@@ -81,10 +83,10 @@ export default function Navbar() {
             <motion.a
               href="#contact"
               onClick={handleClick}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: links.length * 0.08 }}
-              className="mt-4 px-8 py-3.5 rounded-full bg-ink text-white text-base font-bold"
+              transition={{ delay: links.length * 0.06 }}
+              className="mt-2 px-8 py-3.5 rounded-full bg-[#0f172a] text-white text-base font-bold"
             >
               Get a Quote
             </motion.a>

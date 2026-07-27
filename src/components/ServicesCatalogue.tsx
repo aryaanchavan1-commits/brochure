@@ -17,204 +17,199 @@ interface Section {
 
 const sections: Section[] = [
   {
-    num: "01",
-    title: "Website & Web Applications",
+    num: "01", title: "Website & Web Applications",
     desc: "Responsive, high-converting web experiences engineered for mobile and laptop performance.",
     rows: [
-      { scope: "Landing Page — Fast, responsive, lead capture form, basic SEO", arynox: "₹7,999", market: "₹15,000 – ₹30,000" },
-      { scope: "Portfolio / Resume Site — Gallery, blog, custom layout", arynox: "₹10,999", market: "₹20,000 – ₹40,000" },
-      { scope: "Business Website (5–8 Pages) — Mobile-first, WhatsApp CTA, SEO setup", arynox: "₹15,999", market: "₹30,000 – ₹80,000" },
-      { scope: "Premium Corporate Website — Custom UI, CMS, advanced technical SEO", arynox: "₹29,999", market: "₹75,000 – ₹2,50,000+" },
-      { scope: "Educational / LMS Portal — Student/teacher portals, course management", arynox: "₹29,999+", market: "₹1,00,000 – ₹3,00,000+" },
-      { scope: "Restaurant Ordering System — Digital menu, online ordering, billing integration", arynox: "₹17,999+", market: "₹40,000 – ₹1,00,000" },
-      { scope: "Booking & Appointment Platform — Scheduling, service catalog, calendar admin", arynox: "₹19,999+", market: "₹45,000 – ₹1,20,000" },
-      { scope: "Custom Web Application — Web portals, database workflows, APIs, custom dashboards", arynox: "₹39,999+", market: "₹1,00,000 – ₹5,00,000+" },
+      { scope: "Landing Page \u2014 Fast, responsive, lead capture form, basic SEO", arynox: "\u20b97,999", market: "\u20b915,000 \u2013 \u20b930,000" },
+      { scope: "Portfolio / Resume Site \u2014 Gallery, blog, custom layout", arynox: "\u20b910,999", market: "\u20b920,000 \u2013 \u20b940,000" },
+      { scope: "Business Website (5\u20138 Pages) \u2014 Mobile-first, WhatsApp CTA, SEO setup", arynox: "\u20b915,999", market: "\u20b930,000 \u2013 \u20b980,000" },
+      { scope: "Premium Corporate Website \u2014 Custom UI, CMS, advanced technical SEO", arynox: "\u20b929,999", market: "\u20b975,000 \u2013 \u20b92,50,000+" },
+      { scope: "Educational / LMS Portal \u2014 Student/teacher portals, course management", arynox: "\u20b929,999+", market: "\u20b91,00,000 \u2013 \u20b93,00,000+" },
+      { scope: "Restaurant Ordering System \u2014 Digital menu, online ordering, billing integration", arynox: "\u20b917,999+", market: "\u20b940,000 \u2013 \u20b91,00,000" },
+      { scope: "Booking & Appointment Platform \u2014 Scheduling, service catalog, calendar admin", arynox: "\u20b919,999+", market: "\u20b945,000 \u2013 \u20b91,20,000" },
+      { scope: "Custom Web Application \u2014 Web portals, database workflows, APIs, custom dashboards", arynox: "\u20b939,999+", market: "\u20b91,00,000 \u2013 \u20b95,00,000+" },
     ],
   },
   {
-    num: "02",
-    title: "Mobile Application Development",
+    num: "02", title: "Mobile Application Development",
     desc: "Native Android/iOS and cross-platform mobile apps for smartphones and tablets.",
     rows: [
-      { scope: "Android App (Basic) — Play Store ready, push notifications, auth", arynox: "₹19,999", market: "₹50,000 – ₹2,00,000" },
-      { scope: "iOS App (Basic) — App Store submission assistance, Swift UI", arynox: "₹29,999", market: "₹80,000 – ₹3,00,000" },
-      { scope: "Flutter Cross-Platform App — Single codebase for Android & iOS", arynox: "₹29,999+", market: "₹1,00,000 – ₹4,00,000+" },
-      { scope: "E-Commerce Mobile App — Product catalog, cart, gateway, order tracking", arynox: "₹39,999+", market: "₹1,50,000 – ₹5,00,000+" },
-      { scope: "Delivery / On-Demand App — Customer, driver, admin apps with GPS mapping", arynox: "₹49,999+", market: "₹2,50,000 – ₹8,00,000+" },
-      { scope: "App Maintenance & Updates — OS upgrades, bug monitoring, minor features", arynox: "₹2,999/mo", market: "₹8,000 – ₹25,000/mo" },
+      { scope: "Android App (Basic) \u2014 Play Store ready, push notifications, auth", arynox: "\u20b919,999", market: "\u20b950,000 \u2013 \u20b92,00,000" },
+      { scope: "iOS App (Basic) \u2014 App Store submission assistance, Swift UI", arynox: "\u20b929,999", market: "\u20b980,000 \u2013 \u20b93,00,000" },
+      { scope: "Flutter Cross-Platform App \u2014 Single codebase for Android & iOS", arynox: "\u20b929,999+", market: "\u20b91,00,000 \u2013 \u20b94,00,000+" },
+      { scope: "E-Commerce Mobile App \u2014 Product catalog, cart, gateway, order tracking", arynox: "\u20b939,999+", market: "\u20b91,50,000 \u2013 \u20b95,00,000+" },
+      { scope: "Delivery / On-Demand App \u2014 Customer, driver, admin apps with GPS mapping", arynox: "\u20b949,999+", market: "\u20b92,50,000 \u2013 \u20b98,00,000+" },
+      { scope: "App Maintenance & Updates \u2014 OS upgrades, bug monitoring, minor features", arynox: "\u20b92,999/mo", market: "\u20b98,000 \u2013 \u20b925,000/mo" },
     ],
   },
   {
-    num: "03",
-    title: "E-Commerce & Marketplaces",
+    num: "03", title: "E-Commerce & Marketplaces",
     desc: "Fast, secure online storefronts built to process orders and payments seamlessly.",
     rows: [
-      { scope: "Starter Online Store — Up to 20 products, payment gateway, order panel", arynox: "₹19,999", market: "₹50,000 – ₹1,20,000" },
-      { scope: "Basic E-Commerce Store — Up to 100 products, coupon codes, shipping setup", arynox: "₹24,999", market: "₹60,000 – ₹1,80,000" },
-      { scope: "Advanced E-Commerce Platform — Inventory sync, automated invoice, cart recovery", arynox: "₹39,999+", market: "₹1,20,000 – ₹4,00,000+" },
-      { scope: "Custom E-Commerce Solution — Unique UI, headless/API backend, multi-currency", arynox: "₹59,999+", market: "₹2,00,000 – ₹8,00,000+" },
-      { scope: "Multi-Vendor Marketplace — Vendor sub-stores, commission split, vendor dashboards", arynox: "₹79,999+", market: "₹4,00,000 – ₹15,00,000+" },
-      { scope: "WhatsApp Commerce Store — Instant catalog sharing & automated order collection", arynox: "₹12,999+", market: "₹30,000 – ₹80,000" },
+      { scope: "Starter Online Store \u2014 Up to 20 products, payment gateway, order panel", arynox: "\u20b919,999", market: "\u20b950,000 \u2013 \u20b91,20,000" },
+      { scope: "Basic E-Commerce Store \u2014 Up to 100 products, coupon codes, shipping setup", arynox: "\u20b924,999", market: "\u20b960,000 \u2013 \u20b91,80,000" },
+      { scope: "Advanced E-Commerce Platform \u2014 Inventory sync, automated invoice, cart recovery", arynox: "\u20b939,999+", market: "\u20b91,20,000 \u2013 \u20b94,00,000+" },
+      { scope: "Custom E-Commerce Solution \u2014 Unique UI, headless/API backend, multi-currency", arynox: "\u20b959,999+", market: "\u20b92,00,000 \u2013 \u20b98,00,000+" },
+      { scope: "Multi-Vendor Marketplace \u2014 Vendor sub-stores, commission split, vendor dashboards", arynox: "\u20b979,999+", market: "\u20b94,00,000 \u2013 \u20b915,00,000+" },
+      { scope: "WhatsApp Commerce Store \u2014 Instant catalog sharing & automated order collection", arynox: "\u20b912,999+", market: "\u20b930,000 \u2013 \u20b980,000" },
     ],
   },
   {
-    num: "04",
-    title: "CRM, ERP & Business Software",
+    num: "04", title: "CRM, ERP & Business Software",
     desc: "Tailored management software designed specifically around your operational flow.",
     rows: [
-      { scope: "Starter CRM — Lead tracking, customer database, activity logs", arynox: "₹19,999+", market: "₹60,000 – ₹1,80,000" },
-      { scope: "Professional CRM — Sales pipelines, task automation, email/WhatsApp sync", arynox: "₹34,999+", market: "₹1,20,000 – ₹3,50,000" },
-      { scope: "Real Estate / Property CRM — Property listings, site visit logs, buyer matching", arynox: "₹39,999+", market: "₹1,50,000 – ₹5,00,000" },
-      { scope: "Healthcare / Clinic CRM — Patient records, appointments, prescription printing", arynox: "₹44,999+", market: "₹1,80,000 – ₹6,00,000" },
-      { scope: "Inventory & Warehouse System — Multi-location stock, low-stock alerts, PO tracking", arynox: "₹24,999+", market: "₹80,000 – ₹2,50,000" },
-      { scope: "Billing & GST Invoicing Suite — Instant PDF bills, GSTR-ready data exports", arynox: "₹14,999+", market: "₹40,000 – ₹1,20,000" },
-      { scope: "HR & Payroll Suite — Attendance, leave requests, monthly salary slips generation", arynox: "₹29,999+", market: "₹1,00,000 – ₹3,00,000" },
-      { scope: "School / Coaching Academy ERP — Fees, student records, exams, parent updates", arynox: "₹39,999+", market: "₹1,50,000 – ₹5,00,000" },
-      { scope: "Unified ERP Platform — CRM + Inventory + Billing + HR in one unified dashboard", arynox: "₹69,999+", market: "₹3,00,000 – ₹15,00,000+" },
+      { scope: "Starter CRM \u2014 Lead tracking, customer database, activity logs", arynox: "\u20b919,999+", market: "\u20b960,000 \u2013 \u20b91,80,000" },
+      { scope: "Professional CRM \u2014 Sales pipelines, task automation, email/WhatsApp sync", arynox: "\u20b934,999+", market: "\u20b91,20,000 \u2013 \u20b93,50,000" },
+      { scope: "Real Estate / Property CRM \u2014 Property listings, site visit logs, buyer matching", arynox: "\u20b939,999+", market: "\u20b91,50,000 \u2013 \u20b95,00,000" },
+      { scope: "Healthcare / Clinic CRM \u2014 Patient records, appointments, prescription printing", arynox: "\u20b944,999+", market: "\u20b91,80,000 \u2013 \u20b96,00,000" },
+      { scope: "Inventory & Warehouse System \u2014 Multi-location stock, low-stock alerts, PO tracking", arynox: "\u20b924,999+", market: "\u20b980,000 \u2013 \u20b92,50,000" },
+      { scope: "Billing & GST Invoicing Suite \u2014 Instant PDF bills, GSTR-ready data exports", arynox: "\u20b914,999+", market: "\u20b940,000 \u2013 \u20b91,20,000" },
+      { scope: "HR & Payroll Suite \u2014 Attendance, leave requests, monthly salary slips generation", arynox: "\u20b929,999+", market: "\u20b91,00,000 \u2013 \u20b93,00,000" },
+      { scope: "School / Coaching Academy ERP \u2014 Fees, student records, exams, parent updates", arynox: "\u20b939,999+", market: "\u20b91,50,000 \u2013 \u20b95,00,000" },
+      { scope: "Unified ERP Platform \u2014 CRM + Inventory + Billing + HR in one unified dashboard", arynox: "\u20b969,999+", market: "\u20b93,00,000 \u2013 \u20b915,00,000+" },
     ],
   },
   {
-    num: "05",
-    title: "AI, Automation & Chatbots",
+    num: "05", title: "AI, Automation & Chatbots",
     desc: "Integrate AI assistants and automated logic into your existing workflow.",
     rows: [
-      { scope: "AI Website Chatbot — Trained on your business FAQs, 24/7 lead capture", arynox: "₹12,999", market: "₹30,000 – ₹80,000" },
-      { scope: "WhatsApp AI Customer Bot — Smart responses, product recommendations, CRM log", arynox: "₹17,999+", market: "₹45,000 – ₹1,50,000" },
-      { scope: "AI Internal Knowledge Bot — Query internal documents, PDFs, & procedures", arynox: "₹19,999+", market: "₹60,000 – ₹2,00,000" },
-      { scope: "AI Workflow Automation — Auto-connect web forms, email, CRM, WhatsApp, & sheets", arynox: "₹19,999+", market: "₹60,000 – ₹2,00,000" },
-      { scope: "Custom AI Autonomous Agent — Specialized AI system executing multi-step tasks", arynox: "₹34,999+", market: "₹1,00,000 – ₹4,00,000+" },
-      { scope: "LLM / OpenAI API Integration — Embed AI into your existing app or software", arynox: "₹5,999+", market: "₹20,000 – ₹80,000" },
+      { scope: "AI Website Chatbot \u2014 Trained on your business FAQs, 24/7 lead capture", arynox: "\u20b912,999", market: "\u20b930,000 \u2013 \u20b980,000" },
+      { scope: "WhatsApp AI Customer Bot \u2014 Smart responses, product recommendations, CRM log", arynox: "\u20b917,999+", market: "\u20b945,000 \u2013 \u20b91,50,000" },
+      { scope: "AI Internal Knowledge Bot \u2014 Query internal documents, PDFs, & procedures", arynox: "\u20b919,999+", market: "\u20b960,000 \u2013 \u20b92,00,000" },
+      { scope: "AI Workflow Automation \u2014 Auto-connect web forms, email, CRM, WhatsApp, & sheets", arynox: "\u20b919,999+", market: "\u20b960,000 \u2013 \u20b92,00,000" },
+      { scope: "Custom AI Autonomous Agent \u2014 Specialized AI system executing multi-step tasks", arynox: "\u20b934,999+", market: "\u20b91,00,000 \u2013 \u20b94,00,000+" },
+      { scope: "LLM / OpenAI API Integration \u2014 Embed AI into your existing app or software", arynox: "\u20b95,999+", market: "\u20b920,000 \u2013 \u20b980,000" },
     ],
   },
   {
-    num: "06",
-    title: "Data Intelligence & Analytics",
+    num: "06", title: "Data Intelligence & Analytics",
     desc: "Structured datasets, data extraction, and executive analytics dashboards.",
     rows: [
-      { scope: "B2B Growth Data Feed — Structured B2B datasets for direct lead outreach", arynox: "₹90,000+", market: "₹2,00,000 – ₹6,00,000" },
-      { scope: "Custom Web Data Extraction — Compliant automated extraction, structured export", arynox: "₹24,999+", market: "₹75,000 – ₹2,50,000" },
-      { scope: "Business Analytics Dashboard — Visual KPI tracking, revenue, and growth graphs", arynox: "₹29,999+", market: "₹80,000 – ₹2,50,000" },
-      { scope: "AI-Ready Training Datasets — Cleaned, classified structured data for LLM models", arynox: "₹60,000+", market: "₹1,50,000 – ₹5,00,000" },
+      { scope: "B2B Growth Data Feed \u2014 Structured B2B datasets for direct lead outreach", arynox: "\u20b990,000+", market: "\u20b92,00,000 \u2013 \u20b96,00,000" },
+      { scope: "Custom Web Data Extraction \u2014 Compliant automated extraction, structured export", arynox: "\u20b924,999+", market: "\u20b975,000 \u2013 \u20b92,50,000" },
+      { scope: "Business Analytics Dashboard \u2014 Visual KPI tracking, revenue, and growth graphs", arynox: "\u20b929,999+", market: "\u20b980,000 \u2013 \u20b92,50,000" },
+      { scope: "AI-Ready Training Datasets \u2014 Cleaned, classified structured data for LLM models", arynox: "\u20b960,000+", market: "\u20b91,50,000 \u2013 \u20b95,00,000" },
     ],
   },
   {
-    num: "07",
-    title: "AI Trading & Market Analytics",
+    num: "07", title: "AI Trading & Market Analytics",
     desc: "Algorithmic architecture and market research tools.",
     rows: [
-      { scope: "AI Stock Trend Analytics Suite — Market research & momentum trend dashboard", arynox: "₹14,999/yr", market: "₹45,000 – ₹1,20,000/yr" },
-      { scope: "Market Sector Heat Tracker — Real-time sector visualization and custom alerts", arynox: "₹9,999+", market: "₹30,000 – ₹90,000" },
-      { scope: "Algorithmic Trading Architecture — Strategy backtesting & broker API connection", arynox: "₹49,999+", market: "₹1,50,000 – ₹5,00,000+" },
+      { scope: "AI Stock Trend Analytics Suite \u2014 Market research & momentum trend dashboard", arynox: "\u20b914,999/yr", market: "\u20b945,000 \u2013 \u20b91,20,000/yr" },
+      { scope: "Market Sector Heat Tracker \u2014 Real-time sector visualization and custom alerts", arynox: "\u20b99,999+", market: "\u20b930,000 \u2013 \u20b990,000" },
+      { scope: "Algorithmic Trading Architecture \u2014 Strategy backtesting & broker API connection", arynox: "\u20b949,999+", market: "\u20b91,50,000 \u2013 \u20b95,00,000+" },
     ],
   },
   {
-    num: "08",
-    title: "Digital Marketing & Growth",
+    num: "08", title: "Digital Marketing & Growth",
     desc: "Consistent marketing campaigns engineered to increase traffic and revenue.",
     rows: [
-      { scope: "Social Media Management — Content planning, 12 branded posts/mo, analytics", arynox: "₹5,999/mo", market: "₹15,000 – ₹35,000/mo" },
-      { scope: "SEO Starter Package — On-page SEO, technical fixes, Google Business profile", arynox: "₹6,999/mo", market: "₹15,000 – ₹30,000/mo" },
-      { scope: "SEO Growth Package — Comprehensive technical + off-page authority strategy", arynox: "₹11,999/mo", market: "₹30,000 – ₹60,000/mo" },
-      { scope: "Google Ads Management — Search/Display campaigns, conversion setup", arynox: "₹4,999/mo + 10%", market: "₹12,000 – ₹30,000/mo" },
-      { scope: "Meta Ads (FB/Insta) Management — Audience targeting, ad design, ROI tracking", arynox: "₹4,999/mo + 10%", market: "₹12,000 – ₹30,000/mo" },
-      { scope: "WhatsApp Growth Campaign Engine — Targeted messaging flows, auto-responses", arynox: "₹9,999/mo", market: "₹25,000 – ₹60,000/mo" },
+      { scope: "Social Media Management \u2014 Content planning, 12 branded posts/mo, analytics", arynox: "\u20b95,999/mo", market: "\u20b915,000 \u2013 \u20b935,000/mo" },
+      { scope: "SEO Starter Package \u2014 On-page SEO, technical fixes, Google Business profile", arynox: "\u20b96,999/mo", market: "\u20b915,000 \u2013 \u20b930,000/mo" },
+      { scope: "SEO Growth Package \u2014 Comprehensive technical + off-page authority strategy", arynox: "\u20b911,999/mo", market: "\u20b930,000 \u2013 \u20b960,000/mo" },
+      { scope: "Google Ads Management \u2014 Search/Display campaigns, conversion setup", arynox: "\u20b94,999/mo + 10%", market: "\u20b912,000 \u2013 \u20b930,000/mo" },
+      { scope: "Meta Ads (FB/Insta) Management \u2014 Audience targeting, ad design, ROI tracking", arynox: "\u20b94,999/mo + 10%", market: "\u20b912,000 \u2013 \u20b930,000/mo" },
+      { scope: "WhatsApp Growth Campaign Engine \u2014 Targeted messaging flows, auto-responses", arynox: "\u20b99,999/mo", market: "\u20b925,000 \u2013 \u20b960,000/mo" },
     ],
   },
   {
-    num: "09",
-    title: "SEO Specializations",
+    num: "09", title: "SEO Specializations",
     desc: "Targeted search engine optimization to rank higher on Google search results.",
     rows: [
-      { scope: "Local SEO (Map Pack) — Google Maps ranking, citations, local keywords", arynox: "₹6,000/mo", market: "₹10,000 – ₹22,000/mo" },
-      { scope: "On-Page SEO Optimization — Metadata, schema markup, content structure", arynox: "₹6,000/mo", market: "₹12,000 – ₹25,000/mo" },
-      { scope: "Technical SEO & Speed Fixes — Site speed, indexing, Core Web Vitals optimization", arynox: "₹8,000/mo", market: "₹18,000 – ₹35,000/mo" },
-      { scope: "E-Commerce SEO — Product page schema, category ranking, canonical fixes", arynox: "₹10,000/mo", market: "₹25,000 – ₹60,000/mo" },
-      { scope: "Technical SEO Audit Report — In-depth prioritized technical issue roadmap", arynox: "₹4,999 flat", market: "₹12,000 – ₹30,000" },
+      { scope: "Local SEO (Map Pack) \u2014 Google Maps ranking, citations, local keywords", arynox: "\u20b96,000/mo", market: "\u20b910,000 \u2013 \u20b922,000/mo" },
+      { scope: "On-Page SEO Optimization \u2014 Metadata, schema markup, content structure", arynox: "\u20b96,000/mo", market: "\u20b912,000 \u2013 \u20b925,000/mo" },
+      { scope: "Technical SEO & Speed Fixes \u2014 Site speed, indexing, Core Web Vitals optimization", arynox: "\u20b98,000/mo", market: "\u20b918,000 \u2013 \u20b935,000/mo" },
+      { scope: "E-Commerce SEO \u2014 Product page schema, category ranking, canonical fixes", arynox: "\u20b910,000/mo", market: "\u20b925,000 \u2013 \u20b960,000/mo" },
+      { scope: "Technical SEO Audit Report \u2014 In-depth prioritized technical issue roadmap", arynox: "\u20b94,999 flat", market: "\u20b912,000 \u2013 \u20b930,000" },
     ],
   },
   {
-    num: "10",
-    title: "Branding, Creative & UI/UX Design",
+    num: "10", title: "Branding, Creative & UI/UX Design",
     desc: "Professional identity design, corporate logos, and UI wireframing.",
     rows: [
-      { scope: "Professional Logo Design — 3 distinct concepts, vector source assets", arynox: "₹3,999", market: "₹8,000 – ₹25,000" },
-      { scope: "Brand Identity Starter Pack — Logo, color palette, typography guidelines", arynox: "₹9,999", market: "₹25,000 – ₹60,000" },
-      { scope: "Brochure / Profile Design — Digital & print PDF layout design", arynox: "₹4,999+", market: "₹12,000 – ₹35,000" },
-      { scope: "UI/UX Web & Mobile App Design — Figma wireframing, interactive prototyping", arynox: "₹9,999+", market: "₹30,000 – ₹90,000+" },
+      { scope: "Professional Logo Design \u2014 3 distinct concepts, vector source assets", arynox: "\u20b93,999", market: "\u20b98,000 \u2013 \u20b925,000" },
+      { scope: "Brand Identity Starter Pack \u2014 Logo, color palette, typography guidelines", arynox: "\u20b99,999", market: "\u20b925,000 \u2013 \u20b960,000" },
+      { scope: "Brochure / Profile Design \u2014 Digital & print PDF layout design", arynox: "\u20b94,999+", market: "\u20b912,000 \u2013 \u20b935,000" },
+      { scope: "UI/UX Web & Mobile App Design \u2014 Figma wireframing, interactive prototyping", arynox: "\u20b99,999+", market: "\u20b930,000 \u2013 \u20b990,000+" },
     ],
   },
   {
-    num: "11",
-    title: "Support, Maintenance & Cloud",
+    num: "11", title: "Support, Maintenance & Cloud",
     desc: "Reliable technical maintenance, security patches, and cloud monitoring.",
     rows: [
-      { scope: "Website Care Plan — Backups, security monitoring, plugin updates", arynox: "₹2,999/mo", market: "₹8,000 – ₹20,000/mo" },
-      { scope: "Mobile App Care Plan — App store compatibility, minor fixes, server checks", arynox: "₹3,999/mo", market: "₹12,000 – ₹30,000/mo" },
-      { scope: "Managed Cloud Server Deployment — VPS/AWS setup, SSL, firewall monitoring", arynox: "₹4,999/mo+", market: "₹15,000 – ₹40,000/mo" },
+      { scope: "Website Care Plan \u2014 Backups, security monitoring, plugin updates", arynox: "\u20b92,999/mo", market: "\u20b98,000 \u2013 \u20b920,000/mo" },
+      { scope: "Mobile App Care Plan \u2014 App store compatibility, minor fixes, server checks", arynox: "\u20b93,999/mo", market: "\u20b912,000 \u2013 \u20b930,000/mo" },
+      { scope: "Managed Cloud Server Deployment \u2014 VPS/AWS setup, SSL, firewall monitoring", arynox: "\u20b94,999/mo+", market: "\u20b915,000 \u2013 \u20b940,000/mo" },
     ],
   },
 ];
 
 export default function ServicesCatalogue() {
   return (
-    <section id="services" className="py-[clamp(50px,7vw,90px)]">
-      <div className="container mx-auto px-5 max-w-[1240px]">
-        <div className="max-w-[860px] mx-auto text-center mb-[clamp(36px,4vw,52px)]">
-          <div className="inline-flex items-center gap-2.5 text-gold text-xs font-extrabold tracking-[.18em] uppercase mb-[18px]">
-            <span className="inline-block w-[36px] h-[2px] bg-gold-bright" />
-            Complete Catalogue & Direct Price Comparison
+    <section id="services" className="bg-[#fdfbf7]" style={{ paddingTop: "clamp(40px, 7vw, 90px)", paddingBottom: "clamp(40px, 7vw, 90px)" }}>
+      <div className="container mx-auto px-4 sm:px-5 max-w-[1240px]">
+        <div className="max-w-[860px] mx-auto text-center mb-7 sm:mb-[clamp(36px,4vw,52px)]">
+          <div className="inline-flex items-center gap-2 text-[#b8860b] text-[11px] sm:text-xs font-extrabold tracking-[.15em] sm:tracking-[.18em] uppercase mb-3 sm:mb-[18px]">
+            <span className="inline-block w-[24px] sm:w-[36px] h-[2px] bg-[#d4af37]" />
+            Complete Catalogue &amp; Direct Price Comparison
           </div>
-          <h2 className="font-serif text-[clamp(28px,4vw,52px)] leading-[1.12] tracking-[-.02em] font-bold mb-4">
+          <h2 className="font-serif text-[clamp(24px,4vw,52px)] leading-[1.12] tracking-[-.01em] sm:tracking-[-.02em] font-bold text-[#0f172a] mb-3 sm:mb-4">
             Every Service: Arynoxtech Pricing vs. Market Rates
           </h2>
-          <p className="text-[clamp(15px,1.2vw,19px)] text-muted">
+          <p className="text-sm sm:text-[clamp(15px,1.2vw,19px)] text-[#475569]">
             Compare our direct starting rates against prevailing 2026 market pricing across India, Maharashtra, and the
             Konkan region.
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-5 sm:space-y-8">
           {sections.map((sec, idx) => (
             <motion.article
               key={sec.num}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="bg-white border border-line rounded-[16px] p-[clamp(20px,2.8vw,36px)] shadow-sm transition-all duration-300 hover:border-gold-bright hover:shadow-lg hover:-translate-y-0.5"
+              transition={{ duration: 0.4, delay: idx * 0.04 }}
+              className="bg-white border border-[#e2d9ca] rounded-[12px] sm:rounded-[16px] p-4 sm:p-[clamp(20px,2.8vw,36px)] transition-all duration-300 hover:border-[#d4af37] hover:shadow-lg"
             >
-              <h3 className="font-serif text-[clamp(20px,2vw,26px)] font-bold mb-2.5 flex items-center gap-3.5 flex-wrap">
-                <span className="text-gold font-semibold text-[clamp(22px,2.2vw,28px)] italic">{sec.num}</span>
+              <h3 className="font-serif text-[clamp(17px,2vw,26px)] font-bold text-[#0f172a] mb-1.5 sm:mb-2.5 flex items-center gap-2 sm:gap-3.5 flex-wrap">
+                <span className="text-[#b8860b] font-semibold text-[clamp(18px,2.2vw,28px)] italic">{sec.num}</span>
                 {sec.title}
               </h3>
-              <p className="text-[clamp(15px,1.2vw,19px)] text-[#334155] mb-0">{sec.desc}</p>
+              <p className="text-sm sm:text-[clamp(15px,1.2vw,19px)] text-[#334155] mb-0">{sec.desc}</p>
 
-              <div className="mt-5 rounded-xl overflow-hidden border border-line overflow-x-auto scrollbar-thin">
-                <table className="w-full min-w-[580px] border-collapse bg-white text-left">
+              <div className="mt-3 sm:mt-5 rounded-lg sm:rounded-xl overflow-hidden border border-[#e2d9ca] overflow-x-auto scrollbar-thin">
+                <table className="w-full min-w-[520px] sm:min-w-[580px] border-collapse bg-white text-left">
                   <thead>
                     <tr>
-                      <th className="bg-bg-warm px-3 md:px-[18px] py-3.5 text-xs font-extrabold uppercase tracking-wider text-ink-soft border-b-2 border-line">
+                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-[#e2d9ca]">
                         Product / Service Scope
                       </th>
-                      <th className="bg-bg-warm px-3 md:px-[18px] py-3.5 text-xs font-extrabold uppercase tracking-wider text-ink-soft border-b-2 border-line text-right">
-                        Arynoxtech Pricing
+                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-[#e2d9ca] text-right whitespace-nowrap">
+                        Arynoxtech
                       </th>
-                      <th className="bg-bg-warm px-3 md:px-[18px] py-3.5 text-xs font-extrabold uppercase tracking-wider text-ink-soft border-b-2 border-line text-right">
-                        Current Market Pricing (India / MH)
+                      <th className="bg-[#f7f5f0] px-2.5 sm:px-[18px] py-2.5 sm:py-3.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#1e293b] border-b-2 border-[#e2d9ca] text-right whitespace-nowrap">
+                        Market (India / MH)
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     {sec.rows.map((r, i) => (
-                      <tr key={i} className="hover:bg-bg transition-colors">
-                        <td className="px-3 md:px-[18px] py-3 md:py-4 border-b border-[#f1ece3] text-sm md:text-[15px]">
-                          <strong>{r.scope.split(" — ")[0]}</strong>
-                          {r.scope.includes(" — ") && <span> — {r.scope.split(" — ").slice(1).join(" — ")}</span>}
+                      <tr key={i} className="hover:bg-[#fdfbf7] transition-colors">
+                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-[12px] sm:text-[15px] text-[#334155]">
+                          {r.scope.split(" \u2014 ").length > 1 ? (
+                            <>
+                              <strong>{r.scope.split(" \u2014 ")[0]}</strong>
+                              <span className="hidden sm:inline"> \u2014 {r.scope.split(" \u2014 ").slice(1).join(" \u2014 ")}</span>
+                            </>
+                          ) : (
+                            r.scope
+                          )}
                         </td>
-                        <td className="px-3 md:px-[18px] py-3 md:py-4 border-b border-[#f1ece3] text-right text-gold font-extrabold text-sm md:text-[15px] whitespace-nowrap">
+                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-right text-[#b8860b] font-extrabold text-[13px] sm:text-[15px] whitespace-nowrap">
                           {r.arynox}
                         </td>
-                        <td className="px-3 md:px-[18px] py-3 md:py-4 border-b border-[#f1ece3] text-right text-muted font-semibold text-sm md:text-[15px] whitespace-nowrap">
+                        <td className="px-2.5 sm:px-[18px] py-2 sm:py-3.5 border-b border-[#f1ece3] text-right text-[#475569] font-semibold text-[12px] sm:text-[15px] whitespace-nowrap">
                           {r.market}
                         </td>
                       </tr>
